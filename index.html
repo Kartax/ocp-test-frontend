@@ -15,6 +15,15 @@
             el: '#app',
             data: {
                 message: 'Hello Vue!'
+            },
+            created(){
+                fetch('/ocp-test-backend/hello')
+                .then(
+                    response => response.json()
+                )
+                .then(
+                    json => this.message = json
+                )
             }
         })
     </script>
