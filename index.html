@@ -17,7 +17,7 @@
                 message: 'Hello Vue!'
             },
             created(){
-                fetch('http://backend-hello-projectx.apps.us-west-1.starter.openshift-online.com/hello')
+                fetch('ocp-test-backend/hello')
                 .then(
                     response => response.toString()
                 )
