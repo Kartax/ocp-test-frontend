@@ -17,7 +17,7 @@
                 message: 'Hello Vue!'
             },
             created(){
-                fetch('ocp-test-backend/hello')
+                fetch('http://ocp-test-backend:8080/hello')
                 .then(
                     response => response.toString()
                 )
